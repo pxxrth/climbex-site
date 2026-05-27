@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "climbex-site",
+  "compatibility_date": "2026-05-27",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "pages_build_output_dir": "dist/client",
+  "observability": {
+    "enabled": true
+  }
+}
