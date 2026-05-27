@@ -11,8 +11,8 @@ export default function HeroVisual() {
         playsInline
         preload="auto"
         style={{
-          // Keep the painter visible — only mild grade
-          filter: "brightness(0.95) contrast(1.08) saturate(0.9)",
+          // Slightly darker — painter still visible but doesn't pop
+          filter: "brightness(0.78) contrast(1.1) saturate(0.85)",
         }}
       />
 
