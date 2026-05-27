@@ -12,21 +12,21 @@ export default function Hero() {
 
 
       {/* Copy */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-40 pb-24 md:pt-48 md:pb-32 pointer-events-none">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-24 pb-28 md:pt-32 md:pb-32 pointer-events-none">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1.5 text-xs text-muted-foreground pointer-events-auto">
             <MapPin className="size-3.5 text-primary" />
             Serving the Greater Toronto Area
           </div>
-          <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] font-semibold text-gradient">
+          <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.02] font-semibold text-gradient">
             Crystal-clear views,<br />
             from the ground up.
           </h1>
-          <p className="mt-7 max-w-xl text-base md:text-lg text-muted-foreground">
+          <p className="mt-5 max-w-xl text-sm md:text-lg text-muted-foreground">
             Climbex Services is a premium window cleaning crew based in the GTA — engineered for
             high-rise, low-rise and everything in between. Insured, certified, obsessive about finish.
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-3 pointer-events-auto">
+          <div className="mt-6 md:mt-10 flex flex-wrap items-center gap-3 pointer-events-auto">
             <a
               href="#contact"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary text-primary-foreground font-medium px-6 py-3.5 shadow-glow hover:shadow-elevated transition"
