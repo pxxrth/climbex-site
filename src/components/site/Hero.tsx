@@ -7,10 +7,8 @@ export default function Hero() {
       {/* Lightweight CSS/SVG visual — no WebGL */}
       <HeroVisual />
 
-      {/* Noise + vignette */}
-      <div className="absolute inset-0 noise opacity-[0.05] pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
+      {/* Subtle noise only — let the video breathe */}
+      <div className="absolute inset-0 noise opacity-[0.04] pointer-events-none" />
 
 
       {/* Copy */}
