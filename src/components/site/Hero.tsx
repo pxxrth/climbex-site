@@ -1,26 +1,17 @@
 import { ArrowUpRight, MapPin } from "lucide-react";
-import { ClientOnly } from "./ClientOnly";
-import HeroScene from "./HeroScene";
+import HeroVisual from "./HeroVisual";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-hero">
-      {/* 3D scene */}
-      <div className="absolute inset-0">
-        <ClientOnly
-          fallback={
-            <div className="absolute inset-0 grid place-items-center">
-              <div className="size-72 rounded-full bg-gradient-primary blur-3xl opacity-30 animate-float" />
-            </div>
-          }
-        >
-          <HeroScene />
-        </ClientOnly>
-      </div>
+      {/* Lightweight CSS/SVG visual — no WebGL */}
+      <HeroVisual />
 
       {/* Noise + vignette */}
-      <div className="absolute inset-0 noise opacity-[0.06] pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background pointer-events-none" />
+      <div className="absolute inset-0 noise opacity-[0.05] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" />
+
 
       {/* Copy */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-40 pb-24 md:pt-48 md:pb-32 pointer-events-none">
